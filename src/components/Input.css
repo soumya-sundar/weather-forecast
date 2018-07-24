@@ -1,0 +1,26 @@
+.form {
+    font-family: sans-serif !important;
+    padding: 21px;
+    color: rgb(24, 24, 71) !important;
+}
+
+.label {
+  font-size: large;
+}
+
+.input {
+  width: 40%;
+  height: 40px !important;
+  margin: 21px;
+  padding-left: 21px;
+  padding-right: 21px;
+  border: 1px solid rgb(24, 24, 71);
+}
+
+.submit {
+    width: 100px;
+    height: 40px !important;
+    background-color: rgb(24, 24, 71);
+    color: white;
+    border: none;
+}
