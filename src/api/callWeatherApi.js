@@ -12,15 +12,13 @@ export const callWeatherApi = (input) => {
     trimmedStr = trimInput(input);
   }
  
-  let url = `http://api.openweathermap.org/data/2.5/forecast?q=${trimmedStr}&APPID=61a449e46802d368ddbcbeb79e52104c`;
-  alert(url);
+  let url = `http://api.openweathermap.org/data/2.5/forecast?q=${trimmedStr}&units=metric&APPID=61a449e46802d368ddbcbeb79e52104c`;
   return queryCityName(url)
   .then(response => {
     if(response.status === 200) {
       return response.json();
     } else if(response.status === 404) {
-      url = `http://api.openweathermap.org/data/2.5/forecast?zip=${trimmedStr}&APPID=61a449e46802d368ddbcbeb79e52104c`;
-      alert(url);
+      url = `http://api.openweathermap.org/data/2.5/forecast?zip=${trimmedStr}&units=metric&APPID=61a449e46802d368ddbcbeb79e52104c`;
       return queryZipCode(url)
       .then(response => response)
       .catch(error => Promise.reject(error))

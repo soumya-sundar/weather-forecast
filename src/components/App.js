@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-//import logo from './logo.svg';
 import './App.css';
 import Input from './Input.js';
 import { connect } from 'react-redux';
@@ -8,7 +7,6 @@ import { validateInput } from '../actions';
 import {bindActionCreators} from 'redux';
 import DisplayForecast from './DisplayForecast';
 
-//<img src={logo} className="App-logo" alt="logo" />
 class App extends Component {
   static propTypes = {
     inputValue: PropTypes.string,
