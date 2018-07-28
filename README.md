@@ -1,4 +1,4 @@
-##Weather Forecast App
+## Weather Forecast App
 
 This App calls Open Weather Map's API for 5 days weather forecast and displays them in React components.
 
@@ -23,18 +23,18 @@ Refer to Weather_forecast_snapshot.JPEG file.
 ## App Layout Design
 * The layout of this app is inspired from existing news weather pages and also Open Weather Map's Widgets. After    collecting user inputs the app calls the API with the given inputs. The API return is processed and displayed in two main React components which are ForeCast Summary and DisplayHourlyForecast.
 
-* Summary section - Displays the location, day, date, temperature, wind, pressure, humidity etc. The details displayed here are for the nearest time for the current day. If other day buttons are clicked it would display 00:00 hour details of that particular day in here.
+* Summary section - Displays the location, day, date, temperature, wind, pressure, humidity etc. The details displayed here are for the nearest time for the current day. If other day buttons are clicked it would display 00:00 hour details of that particular day.
 
 * Hourly Forecast section - Open Weather API returns forecast details in 3 hour basis spanning over 5 or 6 days. Based on the API hourly returns the data are displayed for every day. Header buttons could be clicked to view that particular day's hourly forecast and summary details.
 
 
 ## Limitations
 
-* User search inputs are restricted to certain patterns. The API returns are consistent from town names, city names, post codes along with country codes (i.e., us,in). 
+* User search inputs are restricted to certain patterns. The API returns are consistent for town names, city names, post codes along with country codes (i.e., us,in). 
 
-* API returns accurate values for town names or city names provided it is not present in US. If we dont specify the country code and the town name is available in US then it will default the search to US. The same applies to city name.
+* API returns accurate values for town names or city names provided it is not present in US. If we dont specify the country code and a similar town name is in US then it will default the search to US. The same applies to city name.
 
-* For postcode relates searches they firmly recommend to use country code for accurate results.
+* For postcode relates searches Open Weather API team firmly recommends to use country code for accurate results.
 
 * API doesn't return data for UK postal code search even along with country code such as uk or gb.
 
@@ -53,7 +53,7 @@ Refer to Weather_forecast_snapshot.JPEG file.
 
 * Include eslint corrections throughout the code.
 
-* Use module bundler such as Webpack with plugins support.
+* Use module bundler such as Webpack with plugin support.
 
 * Use location detectors to display the current location forecast on page loads.
 
