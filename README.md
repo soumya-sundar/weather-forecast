@@ -1,4 +1,4 @@
-#Weather Forecast App
+##Weather Forecast App
 
 This App calls Open Weather Map's API for 5 days weather forecast and displays them in React components.
 
@@ -13,6 +13,8 @@ This App calls Open Weather Map's API for 5 days weather forecast and displays t
 - npm build
 - npm start
 - You should be able to see the app in localhost:3000
+
+Refer to Weather_forecast_snapshot.JPEG file.
 
 ## Tests
 - Run tests using command  - npm test
