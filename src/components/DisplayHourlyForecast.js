@@ -4,10 +4,10 @@ import "./DisplayHourlyForecast.css";
 
 class DisplayHourlyForecast extends Component {
     constructor(props){
-        super(props);
-        this.state={
+      super(props);
+      this.state={
 
-        }
+      }
     }
 
     static propTypes={
@@ -15,8 +15,8 @@ class DisplayHourlyForecast extends Component {
     }
 
     precisionRound(number, precision) {
-        let factor = Math.pow(10, precision);
-        return Math.round(number * factor) / factor;
+      let factor = Math.pow(10, precision);
+      return Math.round(number * factor) / factor;
     }
 
     getTime = (list) => {
@@ -33,21 +33,21 @@ class DisplayHourlyForecast extends Component {
       let data = this.props.data;
       let timeList = this.getTime(data.list);
 
-      let jsxArrays=data.list.map((value, index)=>{
+      let jsxArray=data.list.map((value, index)=>{
         let classNam=(index===data.list.length - 1) ? "hourLast": "hour"
         return(
           <div className={classNam} key={index}>
             <div className="row"><text>{timeList[index]}</text></div>
-            <div className="row"><text>{value.main.temp_max}</text></div>
+            <div className="row"><text>{value.main.temp_max}&deg;C</text></div>
             <img alt={'no icon'} src={`http://openweathermap.org/img/w/${value.weather[0].icon}.png`}/>
-            <div className="row"><text>{value.main.temp_min}</text></div>
+            <div className="row"><text>{value.main.temp_min}&deg;C</text></div>
           </div>
         );  
       });
 
       return(
         <div className="hourlyForecast">
-           {jsxArrays}
+          {jsxArray}
         </div>
       );
     }

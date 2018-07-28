@@ -18,14 +18,14 @@ class Input extends Component {
   }
 
   constructor(props) {
-      super(props);
-      this.state = {
-        inputValue: '',
-      };
+    super(props);
+    this.state = {
+      inputValue: '',
+    };
   }
 
   onChange = (e) => {
-      this.setState({inputValue: e.target.value});
+    this.setState({inputValue: e.target.value});
   }
 
   onSubmit = (e) => {
@@ -48,18 +48,18 @@ class Input extends Component {
 
 
 const mapStateToProps = state => {
-    return {
-      inputValue: state.input,
-    }
+  return {
+    inputValue: state.input,
   }
+}
   
-  const mapDispatchToProps = dispatch => {
-    return {
-      validateInput : bindActionCreators(validateInput, dispatch),
-    }
+const mapDispatchToProps = dispatch => {
+  return {
+    validateInput : bindActionCreators(validateInput, dispatch),
   }
+}
   
-  export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(Input);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Input);

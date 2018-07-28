@@ -31,7 +31,7 @@ class App extends Component {
           <section>
           {Object.keys(this.props.weatherData).length !== 0 ?
           <DisplayForecast weatherData={this.props.weatherData} />
-          : this.props.inputValue}
+          : <div style={{paddingLeft: '20px'}}><h2>{this.props.inputValue}</h2></div>}
           </section>
         </article>
       </div>

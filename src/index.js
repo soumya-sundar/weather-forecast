@@ -8,14 +8,13 @@ import thunkMiddleware from 'redux-thunk';
 import { Provider } from 'react-redux';
 import storeInput from './reducers';
 
-let store = createStore(storeInput, applyMiddleware(
-    thunkMiddleware  ));
+let store = createStore(storeInput, applyMiddleware(thunkMiddleware  ));
 
 ReactDOM.render(
-    <Provider store={store}>
-      <App initialData={window.initialData} />
-    </Provider>,
-    document.getElementById('root')
-  )
+  <Provider store={store}>
+    <App initialData={window.initialData} />
+  </Provider>,
+  document.getElementById('root')
+)
 
 registerServiceWorker();

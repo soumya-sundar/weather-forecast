@@ -26,9 +26,9 @@ export const validateInput = (input) => {
   return dispatch => {
     return callWeatherApi(input)
     .then(response => {
-       //console.log(response);
-        dispatch(storeInput(input));
-        dispatch(storeWeatherData(response));
+      //console.log(response);
+      dispatch(storeInput(input));
+      dispatch(storeWeatherData(response));
     })
     .catch(error => {
       //console.log(error);

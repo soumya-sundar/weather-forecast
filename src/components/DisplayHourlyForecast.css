@@ -1,30 +1,32 @@
 .hourlyForecast {
-    height: 248px !important;
-    max-width: 873px !important;
-    width: auto;
-    display:flex !important;
-    flex-direction: row;
+  height: 248px !important;
+  max-width: 873px !important;
+  width: auto;
+  display:flex !important;
+  flex-direction: row;
+  font-size: 12px !important;
+  font-family: sans-serif !important;
 }
 
 .hour {
-    width:12.49% !important;
-    height: 248px !important;
-    flex-direction: column;  
-    border-right: 1px dashed grey;
-    text-align: center;
+  width:12.49% !important;
+  height: 248px !important;
+  flex-direction: column;  
+  border-right: 1px dashed grey;
+  text-align: center;
 }
 
 .hourLast {
-    width:12.49% !important;
-    height: 248px !important;
-    flex-direction: column;  
-    text-align: center;
+  width:12.49% !important;
+  height: 248px !important;
+  flex-direction: column;  
+  text-align: center;
 }
 
 .row {
-    height: 70px !important;
-    flex-direction: row; 
-    justify-content:center;
-    vertical-align: middle;
-    line-height: 80px;
+  height: 70px !important;
+  flex-direction: row; 
+  justify-content:center;
+  vertical-align: middle;
+  line-height: 80px;
 }
